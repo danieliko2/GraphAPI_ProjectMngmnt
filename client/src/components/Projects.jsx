@@ -6,7 +6,7 @@ import { GET_PROJECTS } from '../queries/projectQueries';
 export default function Projects() {
     const { loading, error, data } = useQuery(GET_PROJECTS);
     if(loading) return <Spinner />
-    if(error) return <p>{ error.message }</p>
+    if(error) return <p>An error has occurred</p>
 
     return (
         <>
