@@ -17,9 +17,10 @@ export default function NotFound() {
         </div>
         <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
         <h1><b>About</b></h1>
-            <p className="text-center fs-5">This is an full-stack project management system I build as part of my MERN stack learning journey,</p>
+            <p className="text-center fs-5">This is a demo of a full-stack project management system I built as part of my MERN stack learning journey,</p>
             <p className="text-center fs-5">It uses MongoDB as a database, Apollo Client Service, GraphQL for API, React as Frontend and NodeJS as Backend,</p>
-            <p className="text-center fs-5">You can check out more of my projects at my  <a target="_blank" rel="noopener noreferrer"  href='https://github.com/danieliko2/'>GitHub</a> page.</p>
+            <p className="text-center fs-5">You can check out more of my projects on my  <a target="_blank" rel="noopener noreferrer"  href='https://github.com/danieliko2/'>GitHub</a> page.</p>
+            <p className="text-center fs-5">The demo is deployed to an AWS server. The full application is on <a target="_blank" rel="noopener noreferrer"  href='https://github.com/danieliko2/GraphAPI_ProjectMngmnt'>GitHub</a>.</p>
             <p className="text-center fs-5">This application was developed using <a target="_blank" rel="noopener noreferrer"  href='https://www.youtube.com/watch?v=BcLNfwF04Kw&t=10287s'>this</a> tutorial.</p>
             <Link to='/' className="btn btn-primary">
                 Go Back
