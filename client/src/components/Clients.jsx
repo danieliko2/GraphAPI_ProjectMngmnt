@@ -8,7 +8,7 @@ export default function Clients() {
     const { loading, error, data } = useQuery(GET_CLIENTS);
 
     if(loading) return <Spinner />;
-    if(error) return <p>An error has occurred</p>;
+    if(error) return <p>Error: { error }</p>
 
     return (
         <>
