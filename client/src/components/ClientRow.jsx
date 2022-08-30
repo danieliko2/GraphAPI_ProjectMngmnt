@@ -6,24 +6,31 @@ import { GET_CLIENTS } from '../queries/clientQueries';
 
 export default function ClientRow({ client }) {
 
-    const [deleteClient] = useMutation(DELETE_CLIENT, {
-        variables: {id: client.id },
-        update(cache, {data: { deleteClient }}) { 
-            const { clients } = cache.readQuery({ query: GET_CLIENTS});
-            cache.writeQuery({
-                query: GET_CLIENTS,
-                data: {clients: clients.filter( client => client.id !== deleteClient.id)},
-            });
-        },
+
+    // For demo
+    // const [demoDeleteClient] = (e) => {
+    //     return alert('This is a Demo');
+    // }
+
+    // const [deleteClient] = useMutation(DELETE_CLIENT, {
+    //     variables: {id: client.id },
+    //     update(cache, {data: { deleteClient }}) { 
+    //         const { clients } = cache.readQuery({ query: GET_CLIENTS});
+    //         cache.writeQuery({
+    //             query: GET_CLIENTS,
+    //             data: {clients: clients.filter( client => client.id !== deleteClient.id)},
+    //         });
+    //     },
         
-    });
+    // });
+    
     return (
     <tr>
         <td>{client.name}</td>
         <td>{client.email}</td>
         <td>{client.phone}</td>
         <td>
-            <button className="btn btn-danger btnsm" onClick={deleteClient}>
+            <button className="btn btn-danger btnsm"  onClick={ (e) => (alert('This is a Demo'))}>
                 <FaTrash />
             </button>
         </td>

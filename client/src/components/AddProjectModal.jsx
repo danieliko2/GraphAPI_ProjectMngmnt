@@ -35,17 +35,20 @@ export default function AddProjectModal() {
 
     const {loading, error, data} = useQuery(GET_CLIENTS);
     const onSubmit = (e) => {
-        e.preventDefault();
-        if(name == '' || description == '' || status == ''){
-            return alert('All fields required, please fill  in all fields');
-        }
-        
-        addProject(name, description, clientId, status);
 
-        setName('');
-        setDescription('');
-        setStatus('new');
-        setClientId('');
+        // for demo
+        return alert("This is a Demo");
+        // e.preventDefault();
+        // if(name == '' || description == '' || status == ''){
+        //     return alert('All fields required, please fill  in all fields');
+        // }
+        
+        // addProject(name, description, clientId, status);
+
+        // setName('');
+        // setDescription('');
+        // setStatus('new');
+        // setClientId('');
     }
 
     if(loading) return null;

@@ -21,14 +21,16 @@ export default function AddClientModal() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if(name == '' || email == '' || phone == ''){
-            return alert('All fields required, please fill  in all fields');
-        }
-        addClient(name, email, phone);
+        // for demo
+        return alert('This is a Demo');
+        // if(name == '' || email == '' || phone == ''){
+        //     return alert('All fields required, please fill  in all fields');
+        // }
+        // addClient(name, email, phone);
         
-        setName('');
-        setEmail('');
-        setPhone('');
+        // setName('');
+        // setEmail('');
+        // setPhone('');
     }
   return (
     <>
